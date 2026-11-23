@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The AI commons flywheels · Current AI</title>
+  <meta name="description" content="Explore how funders, Alpha and compute donors feed the AI commons flywheel.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <p class="brand">Current AI</p>
+    <h1>The AI commons flywheels</h1>
+    <p class="lede">How every dollar, grant and line of code builds the AI commons. Pick a loop to see where it joins the commons flywheel, then click any step to go deeper.</p>
+  </header>
+
+  <main class="layout">
+    <section class="stage" aria-label="Flywheel diagram">
+      <div class="tabs" id="tabs" role="tablist" aria-label="Choose a flywheel"></div>
+      <div class="canvas">
+        <svg id="diagram" role="group" aria-label="Flywheel diagram. Steps are buttons; select one for details."></svg>
+      </div>
+      <p class="canvas-hint">Swipe the diagram sideways to see all of it.</p>
+      <ul class="legend" id="legend" aria-label="Legend"></ul>
+    </section>
+
+    <aside class="panel" aria-label="Details">
+      <div class="panel-body" id="panel-body" aria-live="polite"></div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>Draft for discussion. <a href="https://github.com/currentai-org/flywheels">Source on GitHub</a>.</p>
+  </footer>
+
+  <noscript><p class="noscript">This explorer needs JavaScript to draw the diagrams.</p></noscript>
+  <script src="assets/data.js"></script>
+  <script src="assets/geometry.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
